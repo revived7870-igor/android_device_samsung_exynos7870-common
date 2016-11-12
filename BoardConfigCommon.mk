@@ -22,6 +22,9 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 # Audio
 TARGET_AUDIOHAL_VARIANT := samsung
 
+# Bootanimation
+TARGET_BOOTANIMATION_HALF_RES := true
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := exynos7870
 
