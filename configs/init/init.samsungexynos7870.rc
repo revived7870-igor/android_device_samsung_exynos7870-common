@@ -98,6 +98,9 @@ on post-fs-data
     chmod 0660 /sys/kernel/clat/xlat_v4_addrs
     chown clat clat /sys/kernel/clat/xlat_v4_addrs
 
+# Fix permission for telephony
+    chmod 0644 /proc/cmdline
+
 on boot
     # override init.rc to keep plenty of large order chunks around
     # to improve allocation times
