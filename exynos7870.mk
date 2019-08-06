@@ -240,6 +240,10 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service_32
 
+# Shims
+PRODUCT_PACKAGES += \
+    libcamera_metadata_helper
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(COMMON_PATH) \
