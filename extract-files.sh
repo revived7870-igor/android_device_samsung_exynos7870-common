@@ -70,6 +70,9 @@ function blob_fixup() {
 #            "${PATCHELF}" --replace-needed "libsecril-client.so" "libsecril-client-exynos7870.so" "${2}"
 #            "${PATCHELF}" --set-soname "libsecril-client-exynos7870.so" "${2}"
 #            ;;
+	vendor/lib*/libsensorlistener.so)
+	    "$PATCHELF" --add-needed "libshim_sensorndkbridge.so" "$2"
+	    ;;
     esac
 }
 
