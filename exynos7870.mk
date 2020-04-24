@@ -230,6 +230,7 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
+    WifiOverlay \
     android.hardware.wifi@1.0-service
 
 PRODUCT_COPY_FILES += \
