@@ -108,6 +108,11 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/configs/init/fstab.samsungexynos7870
 # Root
 BOARD_ROOT_EXTRA_FOLDERS := efs
 
+# SELinux
+BOARD_SEPOLICY_TEE_FLAVOR := mobicore
+include device/lineage/sepolicy/exynos/sepolicy.mk
+include device/samsung_slsi/sepolicy/sepolicy.mk
+
 # SCALER
 BOARD_USES_DEFAULT_CSC_HW_SCALER := true
 BOARD_USES_SCALER_M2M1SHOT := true
