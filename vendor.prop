@@ -20,6 +20,7 @@ ro.hardware.keystore=mdfpp
 ro.security.keystore.keytype=sak,gak
 
 # OMX
+debug.stagefright.ccodec=0
 media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # RIL
