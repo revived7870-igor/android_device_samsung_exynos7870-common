@@ -19,6 +19,9 @@ ro.frp.pst=/dev/block/persistent
 ro.hardware.keystore=mdfpp
 ro.security.keystore.keytype=sak,gak
 
+# OMX
+media.stagefright.thumbnail.prefer_hw_codecs=true
+
 # RIL
 exynos.ril.modempath=/dev/block/mmcblk0p5
 exynos.ril.nvpath=/efs/
