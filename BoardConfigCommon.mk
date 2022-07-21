@@ -30,6 +30,9 @@ TARGET_COPY_OUT_ODM := odm
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_USERIMAGES_USE_EXT4 := true
 
+# Headers
+TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
+
 # Kernel
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
