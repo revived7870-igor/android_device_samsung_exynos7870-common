@@ -55,5 +55,8 @@ BOARD_FLASH_BLOCK_SIZE := 4096
 BOARD_VENDOR := samsung
 TARGET_BOARD_PLATFORM := exynos7870
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/configs/init/fstab.samsungexynos7870
+
 # Root
 BOARD_ROOT_EXTRA_FOLDERS := efs
