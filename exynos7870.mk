@@ -7,15 +7,20 @@
 ## Common Path
 COMMON_PATH := device/samsung/exynos7870-common
 
+## Samsung LSI board support package
+$(call inherit-product, hardware/samsung_slsi/exynos7870/exynos7870.mk)
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
     android.hardware.audio.effect@2.0-impl \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio@2.0-impl \
+    audio_amplifier.exynos7870 \
     audio.a2dp.default \
     audio.bluetooth.default \
     audio.r_submix.default \
+    audio.primary.exynos7870 \
     audio.usb.default \
     libaudioroute \
     libtinyalsa \
@@ -45,7 +50,9 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.1-service \
-    android.hardware.graphics.mapper@2.0-impl
+    android.hardware.graphics.mapper@2.0-impl \
+    gralloc.exynos7870 \
+    hwcomposer.exynos7870
 
 # Doze
 PRODUCT_PACKAGES += \
@@ -111,7 +118,8 @@ PRODUCT_COPY_FILES += \
 # Memtrack
 PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service
+    android.hardware.memtrack@1.0-service \
+    memtrack.exynos7870
 
 # NFC
 PRODUCT_PACKAGES += \
