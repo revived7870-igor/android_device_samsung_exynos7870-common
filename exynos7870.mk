@@ -7,6 +7,9 @@
 ## Common Path
 COMMON_PATH := device/samsung/exynos7870-common
 
+## Inherit common vendor blobs
+$(call inherit-product, vendor/samsung/exynos7870-common/exynos7870-common-vendor.mk)
+
 ## Samsung LSI board support package
 $(call inherit-product, hardware/samsung_slsi/exynos7870/exynos7870.mk)
 

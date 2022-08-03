@@ -1,0 +1,147 @@
+#
+# Vendor blobs for exynos7870-common
+#
+
+# AptX - from crosshatch - QP1A.190711.020
+product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
+
+# Camera
+vendor/lib/hw/camera.exynos7870.so
+vendor/lib/libexynoscamera.so
+vendor/lib/libexynoscamera3.so
+vendor/lib/libhwjpeg.so
+vendor/lib/libuniplugin.so
+
+# Fingerprint - A720SKSU5CUJ2
+vendor/lib/libbauthserver.so|9317416d12e18504c283f68f329e0ca958c7668f
+vendor/lib/libbauthtzcommon.so|789258d4d363024f8894e1c18ec7f6f1398bdc38
+vendor/lib/libegis_fp_normal_sensor_test.so|7dcc3901792db369b05cd1d3482b98b071b9528d
+vendor/lib/libgf_in_system_lib.so|90f07a8366cf6c579a520b98cd3cbdea35cc17ca
+vendor/lib/libqfp_sensortest.so|d39552fa515203c2c24051eca10cf8baed2f1c8e
+vendor/lib/libsynaFpSensorTestNwd.so|a106a9d211e982493d2d776b2db48b847fa132da
+vendor/lib64/libbauthserver.so|21e2c0c053e3707739aac485e8be075b45efa1d1
+vendor/lib64/libbauthtzcommon.so|80ab2c23b61415d8b8aeee712f0726bbbf2be705
+vendor/lib64/libegis_fp_normal_sensor_test.so|534f93f7798543c1d8e8479ddc80fdc010ad3340
+vendor/lib64/libgf_in_system_lib.so|fea1b0f2de8a317ccde2f95a133a6eb4609b4eb1
+vendor/lib64/libqfp_sensortest.so|4427f7d12c13a11eeddce3db9fe92d3f4beb15d5
+vendor/lib64/libsynaFpSensorTestNwd.so|30ea33b75b1ae52588ed320d7ebf2eb846ef8612
+
+# Firmware
+vendor/firmware/nfc/sec_s3nrn81_firmware.bin
+vendor/firmware/bcm4345C5_V0069.0172.hcd
+vendor/firmware/cs35l40-dsp1-spk-prot.bin
+vendor/firmware/cs35l40-dsp1-spk-prot-calib.bin
+vendor/firmware/cs35l40-dsp1-spk-prot.wmfw
+vendor/firmware/fimc_is_lib.bin
+vendor/firmware/mfc_fw.bin
+vendor/firmware/setfile_2p6.bin
+vendor/firmware/setfile_2p6_front.bin
+
+# Floating feature
+vendor/etc/floating_feature.xml
+
+# GPS - A720SKSU5CUJ2
+vendor/bin/hw/gpsd|481d950abc178b5e444dd2e75d4226614c7c4032
+vendor/lib/libfloatingfeature.so|a27a6c5cf28cff66d01536f5dbb6ec064e30ec5d
+vendor/lib/libwrappergps.so|69da05db5379d161da1866c907633b16ef7617cd
+vendor/lib64/hw/gps.default.so|e7130572ed5006dd9c3e792584e650a437dc013e
+vendor/lib64/libfloatingfeature.so|a27a6c5cf28cff66d01536f5dbb6ec064e30ec5d
+vendor/lib64/libwrappergps.so|399de1bbf5435c5b90b59549f8916651b92e98a3
+
+# GPS configs
+vendor/etc/gnss/ca.pem
+vendor/etc/gnss/gps.cfg
+
+# Graphics - A720SKSU5CUJ2
+vendor/lib/egl/libGLES_mali.so|b95c1ab62f390f888bc0ad2a6f2e0ff568e5e487
+vendor/lib64/egl/libGLES_mali.so|93b2f7cf14fc47d670f97366844a3d387d93df12
+
+# Init
+vendor/etc/init/init.baseband.rc
+vendor/etc/init/init.gps.rc
+vendor/etc/init/init.vendor.onebinary.rc
+vendor/etc/init/init.vendor.rilchip.rc
+vendor/etc/init/init.vendor.rilcommon.rc
+vendor/etc/init/mobicore.rc
+vendor/etc/init/wifi_brcm.rc
+
+# NFC
+vendor/etc/nfc/sec_s3nrn81_rfreg.bin
+
+# RIL - N975FXXU6ETLL (R)
+vendor/bin/cbd|aae9a11fefb25f0293aa7da714a093d5f017d826
+vendor/bin/hw/rild|c77d17bde3312077a77a3a8238a62e649a996f44
+vendor/lib/libengmode_client.so|38b95cf93d0c1f497e1d8a6370e53b903bb03510
+vendor/lib/libril.so|3e64e6fa4078d892d2c83b21edd1632bcf7fd827
+vendor/lib/libsec-ril-dsds.so|1bf5ba8954f7d0b8fc13b71aa4df7aa0bb0fa5ae
+vendor/lib/libsec-ril.so|5888ae1363fdb0ba5ec9e02df0cd1a12d64e6184
+vendor/lib/libsec_semRil.so|0e098bc1099a8cb466e29b2918c8968d214fb56c
+vendor/lib/libsecnativefeature.so|268dfdbb80196ac0d16abcce9109f87518753361
+vendor/lib/libsecril-client.so|af77c32b35ab1a2b7ee5f38e529e7eb8dee0a195
+vendor/lib/libsemnativecarrierfeature.so|7aeaf1049ffa3718eb4beed0739624c0cb4c9847
+vendor/lib/libvkmanager_vendor.so|9227ca82047d99fbe3a6ffdf203e41b862e48691
+vendor/lib/vendor.samsung.hardware.radio.bridge@2.0.so|c130cf05828ee1e415cf5823f2a67e023508f710
+vendor/lib/vendor.samsung.hardware.radio.channel@2.0.so|8f1ef76608e97b5864e30ea2f2aff2f685eb4d8e
+vendor/lib/vendor.samsung.hardware.radio@2.0.so|1c976df4082e7829578a9cb48c040706e1753a6d
+vendor/lib/vendor.samsung.hardware.radio@2.1.so|6ce633e09b82f54aabd789ca23a5f1833a232f68
+vendor/lib64/libengmode_client.so|ac3615bb78e4e569841abd804c0278c6de181b2c
+vendor/lib64/libril.so|d81e76523a5a28fdf488fa42c0e1d4a2b15fff19
+vendor/lib64/libsec-ril-dsds.so|ddc49c92278ba494d7d5c1362db91fb981952982
+vendor/lib64/libsec-ril.so|f1934f7303c5f3b3c11c3726b271c376f66720c4
+vendor/lib64/libsec_semRil.so|7987ec9be7bf937438c43fc0b9859f6c9b4b5787
+vendor/lib64/libsecnativefeature.so|db918252c537272b99651bee58e6ab017549b623
+vendor/lib64/libsecril-client.so|86b71fb3fb1daa5bc5293d38779c528126e0cfa3
+vendor/lib64/libsemnativecarrierfeature.so|3a1058f01dd6a7663272fdba6a0ea53b9253f934
+vendor/lib64/libvkmanager_vendor.so|c251a0386644c03760148177047ddb0c437029e5
+vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so|ac01bab3a779374005bb6b94e8b354107671d5dc
+vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so|44d2173ab0187ec3460dd54135e2b406bc93b098
+vendor/lib64/vendor.samsung.hardware.radio@2.0.so|e9985c207ffec829a1746af29d45d9da1994805f
+vendor/lib64/vendor.samsung.hardware.radio@2.1.so|12953d8fe923094410dfa0ea983515b0b16e8eba
+
+# Sensors - A720SKSU5CUJ2
+vendor/lib/hw/sensors.exynos7870.so|9b2720e6f449da1ea26969114e9e2db5a3802260
+vendor/lib/libsensorlistener.so|cdf03cded460bfa53d57465f35abaad36c7c6c4c
+vendor/lib64/hw/sensors.exynos7870.so|6a071f9504ff62426a7cc9ab092fccf9c4aa2673
+vendor/lib64/libsensorlistener.so|6d3fff6fe5f2bbc498023d43fffaa3b6a781eb0b
+
+# TEE
+vendor/app/mcRegistry/00060308060501020000000000000000.tlbin
+vendor/app/mcRegistry/07010000000000000000000000000000.tlbin
+vendor/app/mcRegistry/07060000000000000000000000000000.tlbin
+vendor/app/mcRegistry/08130000000000000000000000000000.tlbin
+vendor/app/mcRegistry/FFFFFFFF000000000000000000000001.drbin
+vendor/app/mcRegistry/ffffffff000000000000000000000005.tlbin
+vendor/app/mcRegistry/ffffffff00000000000000000000000a.tlbin
+vendor/app/mcRegistry/ffffffff00000000000000000000000b.tlbin
+vendor/app/mcRegistry/ffffffff00000000000000000000000c.tlbin
+vendor/app/mcRegistry/ffffffff00000000000000000000000d.tlbin
+vendor/app/mcRegistry/ffffffff00000000000000000000000f.tlbin
+vendor/app/mcRegistry/ffffffff000000000000000000000012.tlbin
+vendor/app/mcRegistry/ffffffff000000000000000000000013.tlbin
+vendor/app/mcRegistry/ffffffff00000000000000000000002e.tlbin
+vendor/app/mcRegistry/ffffffff00000000000000000000002f.tlbin
+vendor/app/mcRegistry/ffffffff000000000000000000000030.tlbin
+vendor/app/mcRegistry/ffffffff000000000000000000000038.tlbin
+vendor/app/mcRegistry/ffffffff00000000000000000000003e.tlbin
+vendor/app/mcRegistry/ffffffff000000000000000000000041.tlbin
+vendor/app/mcRegistry/ffffffff000000000000000000000045.tlbin
+vendor/app/mcRegistry/ffffffff000000000000000000000059.tlbin
+vendor/app/mcRegistry/ffffffff000000000000000000000060.tlbin
+vendor/app/mcRegistry/ffffffff000000000000000000000077.tlbin
+vendor/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin
+vendor/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin
+vendor/app/mcRegistry/ffffffffd00000000000000000000014.tlbin
+vendor/app/mcRegistry/ffffffffd00000000000000000000016.tlbin
+vendor/app/mcRegistry/ffffffffd00000000000000000000062.tlbin
+
+# Wifi
+vendor/etc/wifi/.clminfo
+vendor/etc/wifi/bcmdhd_apsta.bin_c5
+vendor/etc/wifi/bcmdhd_apsta.bin_c5_blob
+vendor/etc/wifi/bcmdhd_clm.blob
+vendor/etc/wifi/bcmdhd_mfg.bin_c5
+vendor/etc/wifi/bcmdhd_mfg.bin_c5_blob
+vendor/etc/wifi/bcmdhd_sta.bin_c5
+vendor/etc/wifi/bcmdhd_sta.bin_c5_blob
+vendor/etc/wifi/indoorchannel.info
+vendor/etc/wifi/nvram.txt_c5
