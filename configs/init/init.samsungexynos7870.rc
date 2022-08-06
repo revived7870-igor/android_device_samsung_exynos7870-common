@@ -76,11 +76,8 @@ on post-fs-data
     chmod 0660 /mnt/vendor/efs/cirrus/rdc_cal
     chmod 0660 /mnt/vendor/efs/cirrus/temp_cal
 
-# Samsung Pay
-    mkdir /mnt/vendor/efs/pfw_data 0760 spay spay    
-
 # MST/NFC Switch
-    chown spay system /dev/mst_ctrl
+    chown system system /dev/mst_ctrl
     chmod 0660 /dev/mst_ctrl
 
 # for WIFI MAC address
