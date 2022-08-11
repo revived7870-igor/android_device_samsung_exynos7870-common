@@ -58,16 +58,14 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
-#function blob_fixup() {
-#    case "${1}" in
-#        vendor/lib/libsample5.so)
-#            "${PATCHELF}" --replace-needed "libsample6.so" "libsample7.so" "${2}"
+function blob_fixup() {
+    case "${1}" in
+#        vendor/lib*/libsec_semRil.so|vendor/lib*/libwrappergps.so)
+#            "${PATCHELF}" --replace-needed "libsecril-client.so" "libsecril-client-exynos7870.so" "${2}"
+#            "${PATCHELF}" --set-soname "libsecril-client-exynos7870.so" "${2}"
 #            ;;
-#        vendor/lib/libsample7.so)
-#            "${PATCHELF}" --set-soname "libsample7.so" "${2}"
-#            ;;
-#    esac
-#}
+    esac
+}
 
 if [ -z "${ONLY_TARGET}" ]; then
     # Initialize the helper for common device
