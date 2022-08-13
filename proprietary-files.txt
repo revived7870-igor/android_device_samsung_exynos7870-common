@@ -109,11 +109,9 @@ vendor/lib64/vendor.samsung.hardware.radio@2.1.so|12953d8fe923094410dfa0ea983515
 vendor/lib/libsec_semRil.so|e56c7898495f25d65ba23d60f7b9c514de42d4a7
 vendor/lib64/libsec_semRil.so|f8bb7f66697afd5f2628038295d1f981e627c9b2
 
-# Sensors - A720SKSU5CUJ2
-vendor/lib/hw/sensors.exynos7870.so|9b2720e6f449da1ea26969114e9e2db5a3802260
-vendor/lib/libsensorlistener.so|cdf03cded460bfa53d57465f35abaad36c7c6c4c
-vendor/lib64/hw/sensors.exynos7870.so|6a071f9504ff62426a7cc9ab092fccf9c4aa2673
-vendor/lib64/libsensorlistener.so|6d3fff6fe5f2bbc498023d43fffaa3b6a781eb0b
+# Sensors
+vendor/lib/hw/sensors.universal7870.so:vendor/lib/hw/sensors.exynos7870.so
+vendor/lib/libsensorlistener.so
 
 # TEE
 vendor/app/mcRegistry/00060308060501020000000000000000.tlbin
