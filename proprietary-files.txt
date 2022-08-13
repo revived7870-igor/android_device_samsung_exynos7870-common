@@ -67,6 +67,13 @@ vendor/etc/init/init.vendor.rilcommon.rc
 vendor/etc/init/mobicore.rc
 vendor/etc/init/wifi_brcm.rc
 
+# Mobicore - A720SKSU5CUJ2
+vendor/bin/mcDriverDaemon|69d795c916e7793d3d045a6609b509fc04e5be8c
+vendor/lib/libMcClient.so|0c5866f529bab5b4c25b3fdae448500095c25d56
+vendor/lib/libMcRegistry.so|1640155bda2d0951d6b63a84d45ec43ffdc870af
+vendor/lib64/libMcClient.so|29ed70939392c03f668da0fb67f4a38770df7d76
+vendor/lib64/libMcRegistry.so|d3095f3dd11e6a91b79841bf6d8824b54168cee3
+
 # NFC
 vendor/etc/nfc/sec_s3nrn81_rfreg.bin
 
