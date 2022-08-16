@@ -106,6 +106,7 @@ vendor/lib64/libsec_semRil.so|f8bb7f66697afd5f2628038295d1f981e627c9b2
 # Sensors
 vendor/lib/hw/sensors.universal7870.so:vendor/lib/hw/sensors.exynos7870.so
 vendor/lib/libsensorlistener.so
+vendor/lib/libyasalgo.so
 
 # TEE
 vendor/app/mcRegistry/00060308060501020000000000000000.tlbin
