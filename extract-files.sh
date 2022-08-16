@@ -60,6 +60,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+	vendor/lib/libbauthtzcommon.so)
+	    sed -i "s|\x0b\xd0\xff\xff-\xe9\xf0O\x83\xb0\x89F|\x0b\xd0\xff\xff\x00 pG\x83\xb0\x89F|g" "${2}"
+	    ;;
 #        vendor/lib*/libsec_semRil.so|vendor/lib*/libwrappergps.so)
 #            "${PATCHELF}" --replace-needed "libsecril-client.so" "libsecril-client-exynos7870.so" "${2}"
 #            "${PATCHELF}" --set-soname "libsecril-client-exynos7870.so" "${2}"
