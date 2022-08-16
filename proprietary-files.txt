@@ -12,19 +12,13 @@ vendor/lib/libexynoscamera3.so
 vendor/lib/libhwjpeg.so
 vendor/lib/libuniplugin.so
 
-# Fingerprint - A720SKSU5CUJ2
-vendor/lib/libbauthserver.so|9317416d12e18504c283f68f329e0ca958c7668f
-vendor/lib/libbauthtzcommon.so|789258d4d363024f8894e1c18ec7f6f1398bdc38
-vendor/lib/libegis_fp_normal_sensor_test.so|7dcc3901792db369b05cd1d3482b98b071b9528d
-vendor/lib/libgf_in_system_lib.so|90f07a8366cf6c579a520b98cd3cbdea35cc17ca
-vendor/lib/libqfp_sensortest.so|d39552fa515203c2c24051eca10cf8baed2f1c8e
-vendor/lib/libsynaFpSensorTestNwd.so|a106a9d211e982493d2d776b2db48b847fa132da
-vendor/lib64/libbauthserver.so|21e2c0c053e3707739aac485e8be075b45efa1d1
-vendor/lib64/libbauthtzcommon.so|80ab2c23b61415d8b8aeee712f0726bbbf2be705
-vendor/lib64/libegis_fp_normal_sensor_test.so|534f93f7798543c1d8e8479ddc80fdc010ad3340
-vendor/lib64/libgf_in_system_lib.so|fea1b0f2de8a317ccde2f95a133a6eb4609b4eb1
-vendor/lib64/libqfp_sensortest.so|4427f7d12c13a11eeddce3db9fe92d3f4beb15d5
-vendor/lib64/libsynaFpSensorTestNwd.so|30ea33b75b1ae52588ed320d7ebf2eb846ef8612
+# Fingerprint
+vendor/lib/libbauthserver.so
+vendor/lib/libbauthtzcommon.so
+vendor/lib/libegis_fp_normal_sensor_test.so
+vendor/lib/libgf_in_system_lib.so
+vendor/lib/libqfp_sensortest.so
+vendor/lib/libsynaFpSensorTestNwd.so
 
 # Firmware
 vendor/firmware/nfc/sec_s3nrn81_firmware.bin
