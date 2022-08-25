@@ -13,6 +13,9 @@ $(call inherit-product, vendor/samsung/exynos7870-common/exynos7870-common-vendo
 ## Samsung LSI board support package
 $(call inherit-product, hardware/samsung_slsi/exynos7870/exynos7870.mk)
 
+## Setup dalvik vm configs
+$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
+
 # AAPT
 PRODUCT_AAPT_CONFIG := normal xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
