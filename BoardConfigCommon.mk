@@ -135,6 +135,9 @@ include device/samsung_slsi/sepolicy/sepolicy.mk
 BOARD_USES_DEFAULT_CSC_HW_SCALER := true
 BOARD_USES_SCALER_M2M1SHOT := true
 
+# Vendor
+VENDOR_SECURITY_PATCH := 2022-02-01 # A600FNXXU9CVB1
+
 # Vintf
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml

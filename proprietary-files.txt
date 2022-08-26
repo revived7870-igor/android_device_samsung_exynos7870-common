@@ -1,5 +1,5 @@
 #
-# Vendor blobs for exynos7870-common
+# Vendor blobs for exynos7870-common - A600FNXXU9CVB1
 #
 
 # AptX - from crosshatch - QP1A.190711.020
