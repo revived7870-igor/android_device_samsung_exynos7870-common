@@ -7,9 +7,14 @@ product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 
 # Camera
 vendor/lib/hw/camera.exynos7870.so
+vendor/lib/libGrallocWrapper.so
+vendor/lib/libacryl.so
 vendor/lib/libexynoscamera.so
 vendor/lib/libexynoscamera3.so
+vendor/lib/libgiantmscl.so
 vendor/lib/libhwjpeg.so
+vendor/lib/libion_exynos.so
+vendor/lib/libstainkiller.so
 vendor/lib/libuniplugin.so
 
 # Fingerprint
