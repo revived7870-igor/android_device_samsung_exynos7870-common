@@ -60,7 +60,7 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-	vendor/lib/hw/camera.exynos7870.so|vendor/lib/libexynoscamera3.so)
+	vendor/lib/hw/camera.exynos7870.so|vendor/lib/libexynoscamera.so|vendor/lib/libexynoscamera3.so)
 	    "${PATCHELF}" --replace-needed "libcamera_client.so" "libcamera_metadata_helper.so" "${2}"
 	    ;;
 	vendor/lib/libbauthtzcommon.so)
