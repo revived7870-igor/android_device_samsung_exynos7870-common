@@ -110,7 +110,7 @@
 /dev/mobicore-user        0666   radio      system
 
 # Secure MEM driver
-/dev/s5p-smem             0660   sytsem     system
+/dev/s5p-smem             0660   system     system
 
 # cbd modem block
 /dev/block/mmcblk0p5     0400  radio   system
@@ -136,7 +136,7 @@
 /dev/umts_csd             0660   system     loop_radio
 /dev/smd4                 0660   system     radio
 /dev/ramdump_memshare     0660   system     radio
-/dev/umts_ciq*            0660   system     bridge_rw
+/dev/umts_ciq*            0660   system     radio
 
 # interactive governor parameters
 /sys/devices/system/cpu/cpu*   cpufreq/interactive/timer_rate                  0660    system  system
