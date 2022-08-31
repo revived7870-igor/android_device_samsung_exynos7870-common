@@ -5,6 +5,29 @@
 # AptX - from crosshatch - QP1A.190711.020
 product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 
+# Audio
+vendor/etc/dolby/dax-default.xml
+vendor/etc/mixer_gains.xml
+vendor/etc/mixer_paths.xml
+vendor/lib/hw/audio.primary.exynos7870.so
+vendor/lib/soundfx/libaudioeffectoffload.so
+vendor/lib/soundfx/libswdap.so
+vendor/lib/lib_SamsungRec_06004.so
+vendor/lib/lib_SoundAlive_SRC384_ver320.so
+vendor/lib/lib_soundaliveresampler.so
+vendor/lib/libLifevibes_lvverx.so
+vendor/lib/libLifevibes_lvvetx.so
+vendor/lib/libSamsungPostProcessConvertor.so
+vendor/lib/libaudio-ril.so
+vendor/lib/libaudioroute.so
+vendor/lib/libfloatingfeature.so
+vendor/lib/libpreprocessing_nxp.so
+vendor/lib/librecordalive.so
+vendor/lib/libsamsungDiamondVoice.so
+vendor/lib/libsecaudioinfo.so
+vendor/lib/libtinyalsa.so
+vendor/lib/libvndsecril-client.so
+
 # Camera
 vendor/lib/hw/camera.exynos7870.so
 vendor/lib/libGrallocWrapper.so
