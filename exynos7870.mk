@@ -32,6 +32,7 @@ PRODUCT_PACKAGES += \
     audio.primary.default \
     audio.usb.default \
     libaudioroute \
+    libstdc++.vendor \
     libtinyalsa \
     libtinycompress
 
