@@ -20,8 +20,8 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 # Audio
 PRODUCT_PACKAGES += \
     audio.primary.exynos7870_32 \
-    android.hardware.audio@2.0-impl \
-    android.hardware.audio.effect@2.0-impl \
+    android.hardware.audio@4.0-impl \
+    android.hardware.audio.effect@4.0-impl \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio@2.0-impl \
     audio.a2dp.default \
