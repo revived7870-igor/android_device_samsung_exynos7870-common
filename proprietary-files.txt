@@ -65,12 +65,10 @@ vendor/etc/floating_feature.xml
 # GPS - A720SKSU5CUJ2
 vendor/bin/hw/gpsd|481d950abc178b5e444dd2e75d4226614c7c4032
 vendor/lib/libfloatingfeature.so|a27a6c5cf28cff66d01536f5dbb6ec064e30ec5d
+vendor/lib/libwrappergps.so|69da05db5379d161da1866c907633b16ef7617cd
 vendor/lib64/hw/gps.default.so|e7130572ed5006dd9c3e792584e650a437dc013e
 vendor/lib64/libfloatingfeature.so|a27a6c5cf28cff66d01536f5dbb6ec064e30ec5d
-
-# GPS - A720SKSU5CUJ2 - replaced libsecril-client with libsecril-client-exynos7870
-vendor/lib/libwrappergps.so|c8d3e6f9bdcb1be2110e5f74befa152786236c28
-vendor/lib64/libwrappergps.so|2332276f7fd696c6ea251bc178eca770b84a3bd5
+vendor/lib64/libwrappergps.so|399de1bbf5435c5b90b59549f8916651b92e98a3
 
 # GPS configs
 vendor/etc/gnss/ca.pem
@@ -106,8 +104,9 @@ vendor/lib/libengmode_client.so|38b95cf93d0c1f497e1d8a6370e53b903bb03510
 -vendor/lib/libril.so|3e64e6fa4078d892d2c83b21edd1632bcf7fd827
 vendor/lib/libsec-ril-dsds.so|1bf5ba8954f7d0b8fc13b71aa4df7aa0bb0fa5ae
 vendor/lib/libsec-ril.so|5888ae1363fdb0ba5ec9e02df0cd1a12d64e6184
+vendor/lib/libsec_semRil.so|0e098bc1099a8cb466e29b2918c8968d214fb56c
 vendor/lib/libsecnativefeature.so|268dfdbb80196ac0d16abcce9109f87518753361
--vendor/lib/libsecril-client-exynos7870.so|5831fd528b0a7c1c416a88c279039e92281b1bb5
+vendor/lib/libsecril-client.so|af77c32b35ab1a2b7ee5f38e529e7eb8dee0a195
 vendor/lib/libsemnativecarrierfeature.so|7aeaf1049ffa3718eb4beed0739624c0cb4c9847
 vendor/lib/libvkmanager_vendor.so|9227ca82047d99fbe3a6ffdf203e41b862e48691
 vendor/lib/vendor.samsung.hardware.radio.bridge@2.0.so|c130cf05828ee1e415cf5823f2a67e023508f710
@@ -118,18 +117,15 @@ vendor/lib64/libengmode_client.so|ac3615bb78e4e569841abd804c0278c6de181b2c
 -vendor/lib64/libril.so|d81e76523a5a28fdf488fa42c0e1d4a2b15fff19
 vendor/lib64/libsec-ril-dsds.so|ddc49c92278ba494d7d5c1362db91fb981952982
 vendor/lib64/libsec-ril.so|f1934f7303c5f3b3c11c3726b271c376f66720c4
+vendor/lib64/libsec_semRil.so|7987ec9be7bf937438c43fc0b9859f6c9b4b5787
 vendor/lib64/libsecnativefeature.so|db918252c537272b99651bee58e6ab017549b623
--vendor/lib64/libsecril-client-exynos7870.so|cde9a5d30b70de018d9d38bfbdcb9be4026c68f7
+vendor/lib64/libsecril-client.so|86b71fb3fb1daa5bc5293d38779c528126e0cfa3
 vendor/lib64/libsemnativecarrierfeature.so|3a1058f01dd6a7663272fdba6a0ea53b9253f934
 vendor/lib64/libvkmanager_vendor.so|c251a0386644c03760148177047ddb0c437029e5
 vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so|ac01bab3a779374005bb6b94e8b354107671d5dc
 vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so|44d2173ab0187ec3460dd54135e2b406bc93b098
 vendor/lib64/vendor.samsung.hardware.radio@2.0.so|e9985c207ffec829a1746af29d45d9da1994805f
 vendor/lib64/vendor.samsung.hardware.radio@2.1.so|12953d8fe923094410dfa0ea983515b0b16e8eba
-
-# RIL - N975FXXU6ETLL (R) - replaced libsecril-client with libsecril-client-exynos7870
-vendor/lib/libsec_semRil.so|e56c7898495f25d65ba23d60f7b9c514de42d4a7
-vendor/lib64/libsec_semRil.so|f8bb7f66697afd5f2628038295d1f981e627c9b2
 
 # Sensors
 vendor/etc/yas_set.cfg
