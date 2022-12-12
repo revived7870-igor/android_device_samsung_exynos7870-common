@@ -164,6 +164,7 @@ vendor/app/mcRegistry/ffffffffd00000000000000000000016.tlbin
 vendor/app/mcRegistry/ffffffffd00000000000000000000062.tlbin
 
 # Wifi
+vendor/bin/hw/macloader
 vendor/etc/wifi/.clminfo
 vendor/etc/wifi/bcmdhd_apsta.bin_c5
 vendor/etc/wifi/bcmdhd_apsta.bin_c5_blob
