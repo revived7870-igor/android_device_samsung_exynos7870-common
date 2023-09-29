@@ -30,14 +30,10 @@ vendor/lib/libvndsecril-client.so
 
 # Camera
 vendor/lib/hw/camera.exynos7870.so
-vendor/lib/libGrallocWrapper.so
 vendor/lib/libOpenCv.camera.samsung.so
-vendor/lib/libacryl.so
 vendor/lib/libexynoscamera.so
 vendor/lib/libexynoscamera3.so
-vendor/lib/libgiantmscl.so
 vendor/lib/libhwjpeg.so
-vendor/lib/libion_exynos.so
 vendor/lib/libstainkiller.so
 vendor/lib/libuniplugin.so
 

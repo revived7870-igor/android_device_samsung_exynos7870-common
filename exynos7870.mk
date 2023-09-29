@@ -10,9 +10,6 @@ COMMON_PATH := device/samsung/exynos7870-common
 ## Inherit common vendor blobs
 $(call inherit-product, vendor/samsung/exynos7870-common/exynos7870-common-vendor.mk)
 
-## Samsung LSI board support package
-$(call inherit-product, hardware/samsung_slsi/exynos7870/exynos7870.mk)
-
 ## Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
@@ -58,6 +55,11 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5-service \
+    camera.exynos7870 \
+    libGrallocWrapper \
+    libacryl \
+    libcsc \
+    libgiantmscl \
     libgui_vendor \
     libsensorndkbridge
 
@@ -68,7 +70,8 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@2.0-impl \
     gralloc.exynos7870 \
-    hwcomposer.exynos7870
+    hwcomposer.exynos7870 \
+    libExynosHWCService \
 
 # Doze
 PRODUCT_PACKAGES += \
@@ -154,6 +157,7 @@ PRODUCT_COPY_FILES += \
 
 # OMX
 PRODUCT_PACKAGES += \
+    libstagefrighthw \
     libExynosOMX_Core \
     libExynosOMX_Resourcemanager \
     libOMX.Exynos.AVC.Decoder \
@@ -164,8 +168,7 @@ PRODUCT_PACKAGES += \
     libOMX.Exynos.MPEG4.Encoder \
     libOMX.Exynos.VP8.Decoder \
     libOMX.Exynos.VP8.Encoder \
-    libOMX.Exynos.WMV.Decoder \
-    libstagefrighthw
+    libOMX.Exynos.WMV.Decoder
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS := $(COMMON_PATH)/overlay
