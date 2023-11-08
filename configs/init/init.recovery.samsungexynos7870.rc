@@ -1,0 +1,4 @@
+on fs
+    wait /dev/block/platform/13540000.dwmmc0
+    symlink /dev/block/by-name/${ro.boot.super_partition} /dev/block/by-name/super
+

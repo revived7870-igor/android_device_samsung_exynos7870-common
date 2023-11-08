@@ -106,8 +106,16 @@ PRODUCT_PACKAGES += \
    libhwbinder \
    libhwbinder.vendor
 
+# Dynamic Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# Fastboot
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Init
 PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/init/init.recovery.samsungexynos7870.rc:$(TARGET_RECOVERY_OUT)/root/init.recovery.samsungexynos7870.rc \
     $(COMMON_PATH)/configs/init/init.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.samsung.rc \
     $(COMMON_PATH)/configs/init/init.samsungexynos7870.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.samsungexynos7870.rc \
     $(COMMON_PATH)/configs/init/init.samsungexynos7870.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.samsungexynos7870.usb.rc \
