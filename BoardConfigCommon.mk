@@ -34,8 +34,6 @@ TARGET_BOOTLOADER_BOARD_NAME := exynos7870
 
 # BSP
 BOARD_USES_DT := true
-TARGET_SLSI_VARIANT := linaro
-TARGET_SOC_NAME := exynos
 include hardware/samsung_slsi-linaro/config/BoardConfig7870.mk
 
 # Filesystem
@@ -68,7 +66,7 @@ BOARD_FLASH_BLOCK_SIZE := 4096
 
 # Platform
 BOARD_VENDOR := samsung
-TARGET_BOARD_PLATFORM := exynos7870
+TARGET_BOARD_PLATFORM := universal7870
 TARGET_SOC := exynos7870
 
 # Props
