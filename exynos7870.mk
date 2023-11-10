@@ -62,7 +62,8 @@ PRODUCT_PACKAGES += \
     libcsc \
     libgiantmscl \
     libgui_vendor \
-    libsensorndkbridge
+    libsensorndkbridge \
+    libexynoscamera_shim
 
 # Display
 PRODUCT_PACKAGES += \
