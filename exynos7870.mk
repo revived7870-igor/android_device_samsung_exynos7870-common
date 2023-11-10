@@ -57,6 +57,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5-service \
     camera.universal7870 \
     libGrallocWrapper \
+    libacryl \
+    libhwjpeg \
     libcsc \
     libgiantmscl \
     libgui_vendor \
