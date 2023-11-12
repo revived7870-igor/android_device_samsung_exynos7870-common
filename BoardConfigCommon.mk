@@ -19,13 +19,6 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
-# Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth
-BOARD_CUSTOM_BT_CONFIG := $(COMMON_PATH)/bluetooth/libbt_vndcfg.txt
-BOARD_HAVE_BLUETOOTH := true
-BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_HAVE_SAMSUNG_BLUETOOTH := true
-
 # Bootanimation
 TARGET_BOOTANIMATION_HALF_RES := true
 
@@ -68,6 +61,9 @@ TARGET_KERNEL_SOURCE := kernel/samsung/exynos7870
 TARGET_KERNEL_CLANG_COMPILE := false
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
+
+# LIBHWJPEG
+TARGET_USES_OREO_LIBHWJPEG := true
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
