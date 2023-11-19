@@ -60,7 +60,6 @@ vendor/lib/egl/libGLES_mali.so|b95c1ab62f390f888bc0ad2a6f2e0ff568e5e487
 vendor/lib64/egl/libGLES_mali.so|93b2f7cf14fc47d670f97366844a3d387d93df12
 
 # Init
-vendor/etc/init/init.baseband.rc
 vendor/etc/init/init.gps.rc
 vendor/etc/init/init.vendor.onebinary.rc
 vendor/etc/init/init.vendor.rilchip.rc
