@@ -25,6 +25,10 @@ TARGET_BOOTANIMATION_HALF_RES := true
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := exynos7870
 
+# Audio
+TARGET_AUDIOHAL_VARIANT := exynos7870
+TARGET_USES_VND_SECRIL := true
+
 # BSP
 BOARD_USES_DT := true
 include hardware/samsung_slsi-linaro/config/BoardConfig7870.mk

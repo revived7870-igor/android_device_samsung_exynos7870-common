@@ -1,4 +1,4 @@
-#
+	#
 # Copyright (C) 2022 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
@@ -19,6 +19,7 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # Audio
 PRODUCT_PACKAGES += \
+    audio.primary.exynos7870_32 \
     android.hardware.audio@2.0-impl \
     android.hardware.audio.effect@2.0-impl \
     android.hardware.audio.service \
