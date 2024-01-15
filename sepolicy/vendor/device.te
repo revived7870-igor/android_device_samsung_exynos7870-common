@@ -1,0 +1,10 @@
+type secmem_device, dev_type;
+
+type amplifier_device, dev_type;
+
+type m2m1shot_device, dev_type;
+
+type gps_device, dev_type;
+
+type bluetooth_device, dev_type;
+

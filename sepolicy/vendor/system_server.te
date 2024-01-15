@@ -1,0 +1,4 @@
+allow system_server {
+    userspace_reboot_exported_prop
+    userspace_reboot_config_prop
+}:file { read open getattr };

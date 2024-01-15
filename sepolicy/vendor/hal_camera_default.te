@@ -1,0 +1,8 @@
+r_dir_file(hal_camera_default, sysfs_camera);
+allow hal_camera_default sysfs_camera_writable:file rw_file_perms;
+
+get_prop(hal_camera_default, exported_camera_prop);
+
+allow hal_camera_default hal_graphics_mapper_hwservice:hwservice_manager find;
+
+allow hal_camera_default m2m1shot_device:chr_file { ioctl open write read };

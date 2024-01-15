@@ -1,0 +1,5 @@
+allow gpsd sysfs_sec_gps:file { getattr open read };
+
+allow gpsd sysfs_wake_lock:file { open read write };
+
+allow gpsd gps_device:chr_file rw_file_perms;

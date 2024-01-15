@@ -1,0 +1,5 @@
+dontaudit kernel self:capability { dac_override dac_read_search };
+
+r_dir_file(kernel, efs_file);
+allow kernel app_efs_file:dir create_dir_perms;
+allow kernel app_efs_file:file create_file_perms;
