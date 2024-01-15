@@ -39,10 +39,10 @@ on post-fs-data
     mkdir /data/vendor/log 0771 root system
 
 #SystemFramework
-    chown system system /data/cache/backup
-    chmod 0711 /data/cache/backup
-    chown system system /data/cache/backup_stage
-    chmod 0711 /data/cache/backup_stage
+#    chown system system /data/cache/backup
+#    chmod 0711 /data/cache/backup
+#    chown system system /data/cache/backup_stage
+#    chmod 0711 /data/cache/backup_stage
 
     setprop vold.post_fs_data_done 1
 
@@ -111,23 +111,23 @@ on boot
     chown system log /proc/sec_log
 
     # Permissions for NAD
-    symlink /dev/block/platform/13540000.dwmmc0/by-name/NAD_REFER /dev/block/NAD_REFER
-    chown system radio /sys/class/sec/sec_nad/nad_stat
-    chmod 0664 /sys/class/sec/sec_nad/nad_stat
-    chown system radio /sys/class/sec/sec_nad/nad_erase
-    chmod 0664 /sys/class/sec/sec_nad/nad_erase
-    chown system radio /sys/class/sec/sec_nad/nad_acat
-    chmod 0664 /sys/class/sec/sec_nad/nad_acat
-    chown system radio /sys/class/sec/sec_nad/nad_dram
-    chmod 0664 /sys/class/sec/sec_nad/nad_dram
-    chown system radio /sys/class/sec/sec_nad/nad_all
-    chmod 0664 /sys/class/sec/sec_nad/nad_all
-    chown system radio /sys/class/sec/sec_nad/nad_support
-    chmod 0664 /sys/class/sec/sec_nad/nad_support
-    chown system radio /sys/class/sec/sec_nad/nad_api
-    chmod 0664 /sys/class/sec/sec_nad/nad_api
-    chown system radio /dev/block/NAD_REFER
-    chmod 0664 /dev/block/NAD_REFER
+#    symlink /dev/block/platform/13540000.dwmmc0/by-name/NAD_REFER /dev/block/NAD_REFER
+#    chown system radio /sys/class/sec/sec_nad/nad_stat
+#    chmod 0664 /sys/class/sec/sec_nad/nad_stat
+#    chown system radio /sys/class/sec/sec_nad/nad_erase
+#    chmod 0664 /sys/class/sec/sec_nad/nad_erase
+#    chown system radio /sys/class/sec/sec_nad/nad_acat
+#    chmod 0664 /sys/class/sec/sec_nad/nad_acat
+#    chown system radio /sys/class/sec/sec_nad/nad_dram
+#    chmod 0664 /sys/class/sec/sec_nad/nad_dram
+#    chown system radio /sys/class/sec/sec_nad/nad_all
+#    chmod 0664 /sys/class/sec/sec_nad/nad_all
+#    chown system radio /sys/class/sec/sec_nad/nad_support
+#    chmod 0664 /sys/class/sec/sec_nad/nad_support
+#    chown system radio /sys/class/sec/sec_nad/nad_api
+#    chmod 0664 /sys/class/sec/sec_nad/nad_api
+#    chown system radio /dev/block/NAD_REFER
+#    chmod 0664 /dev/block/NAD_REFER
 
     # 1-key hard reset
     chown system system /sys/power/reset_enabled
@@ -185,6 +185,7 @@ on boot
     chown system system /sys/devices/system/cpu/cpu0/cpufreq/interactive/boost
     chmod 0660 /sys/devices/system/cpu/cpu0/cpufreq/interactive/boost
     chown system system /sys/devices/system/cpu/cpu0/cpufreq/interactive/boostpulse
+    chown 0660 sys/devices/system/cpu/cpu0/cpufreq/interactive/boostpulse
     chown system system /sys/devices/system/cpu/cpu0/cpufreq/interactive/input_boost
     chmod 0660 /sys/devices/system/cpu/cpu0/cpufreq/interactive/input_boost
     chown system system /sys/devices/system/cpu/cpu0/cpufreq/interactive/boostpulse_duration
@@ -209,6 +210,7 @@ on boot
     chown system system /sys/devices/system/cpu/cpu4/cpufreq/interactive/boost
     chmod 0660 /sys/devices/system/cpu/cpu4/cpufreq/interactive/boost
     chown system system /sys/devices/system/cpu/cpu4/cpufreq/interactive/boostpulse
+    chown 0660 sys/devices/system/cpu/cpu4/cpufreq/interactive/boostpulse
     chown system system /sys/devices/system/cpu/cpu4/cpufreq/interactive/input_boost
     chmod 0660 /sys/devices/system/cpu/cpu4/cpufreq/interactive/input_boost
     chown system system /sys/devices/system/cpu/cpu4/cpufreq/interactive/boostpulse_duration
@@ -348,7 +350,7 @@ on fs
 # Permissions for TouchScreen
     chown system radio /sys/class/sec/tsp/cmd
     chown system system /sys/class/sec/tsp/input/enabled
-
+    chown 660 /sys/class/sec/tsp/input/enabled
 # Permissions for Touchkey
     chown system radio /sys/class/sec/sec_touchkey/brightness
     chown system radio /sys/class/sec/sec_touchkey/touchkey_firm_update
