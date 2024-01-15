@@ -287,10 +287,10 @@ on boot
     chmod 0775 /dev/socket
 
 # Move 2 SD card
-service extSdUFSVold /system/bin/extSDCardServiceVold
-    class main
-    user system
-    group system mount radio net_bt sdcard_rw shell media media_rw
+#service extSdUFSVold /system/bin/extSDCardServiceVold
+#    class main
+#    user system
+#    group system mount radio net_bt sdcard_rw shell media media_rw
 
 on fs
     mount_all /vendor/etc/fstab.${ro.hardware}
@@ -412,16 +412,16 @@ on fs
     chown system system /dev/network_throughput
 
 # ARGOSD
-service argos-daemon /vendor/bin/argosd
-    class main
-    user system
-    group system radio
+#service argos-daemon /vendor/bin/argosd
+#    class main
+#    user system
+#    group system radio
 
-service cp_vername /vendor/bin/cp_vername.sh /sys/class/nfc_test/test
-    class core
-    user system
-    group system
-    oneshot
+#service cp_vername /vendor/bin/cp_vername.sh /sys/class/nfc_test/test
+#    class core
+#    user system
+#    group system
+#    oneshot
 
 # LPM
 on charger
@@ -442,10 +442,10 @@ service charger /system/bin/charger
 #    class core
 
 # RPMB daemon
-service rpmbd /system/bin/rpmbd
-     user root
-     group drmrpc
-     class main
+#service rpmbd /system/bin/rpmbd
+#     user root
+#     group drmrpc
+#     class main
 
 on property:sys.mobicoredaemon.enable=true
     start cs_service
@@ -464,16 +464,16 @@ on property:sys.mobicoredaemon.enable=true
 #    group system
 
 # FINGERPRINT FRAMEWORK : starts fingerprintd
-service fingerprintd /system/bin/fingerprintd
-    class late_start
-    user system
-    group system
+#service fingerprintd /system/bin/fingerprintd
+#    class late_start
+#    user system
+#    group system
 
 # faced
-service faced /system/bin/faced
-    class late_start
-    user system
-    group system
+#service faced /system/bin/faced
+#    class late_start
+#    user system
+#    group system
 
 # SCE daemon
 #    service SCE-daemon /system/bin/sced
@@ -495,11 +495,11 @@ service fuse_usb1 /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/usb1 /stor
     disabled
 
 # IPSec for VOLTE
-service ipsec-daemon /system/bin/IPSecService
-    class main
-    socket ipsec_socket stream 660 system net_admin
-    user system
-    group system net_raw inet net_admin
+#service ipsec-daemon /system/bin/IPSecService
+#    class main
+#    socket ipsec_socket stream 660 system net_admin
+#    user system
+#    group system net_raw inet net_admin
 
 # Set watchdog timer to 30 seconds and pet it every 10 seconds to get a 20 second margin
 service watchdogd /system/bin/watchdogd 10 20
@@ -533,12 +533,12 @@ on property:persist.sys.storage_preload=0
     start umount_service
 
 # SSWAP
-service swapon /sbin/sswap -s -f 1536
-    class core
-    user root
-    group root
-    seclabel u:r:sswap:s0
-    oneshot
+#service swapon /sbin/sswap -s -f 1536
+#    class core
+#    user root
+#    group root
+#    seclabel u:r:sswap:s0
+#    oneshot
 
 # sem_daemon
 service sem_daemon /system/bin/sem_daemon
