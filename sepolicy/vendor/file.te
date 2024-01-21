@@ -17,3 +17,4 @@ type sysfs_decon, sysfs_type, rw_fs_type, fs_type;
 type sysfs_decon_writable, sysfs_type, rw_fs_type, fs_type;
 type sysfs_chipid, sysfs_type, r_fs_type, fs_type;
 type sysfs_v4l, sysfs_type, r_fs_type, fs_type;
+type sysfs_modem, sysfs_type, r_fs_type, fs_type;
