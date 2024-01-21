@@ -35,8 +35,8 @@ on post-fs-data
     chmod 0644 /dev/freezer/olaf/freezer.state
 
 # Log data folder
-    mkdir /data/vendor 0771 root system
-    mkdir /data/vendor/log 0771 root system
+#    mkdir /data/vendor 0771 root system 
+#    mkdir /data/vendor/log 0771 root system 
 
 #SystemFramework
 #    chown system system /data/cache/backup
@@ -66,7 +66,7 @@ on post-fs-data
     chmod 0660 /dev/mst_ctrl
 
 # Magnetic sensor YAS539 lib
-    mkdir /data/system/yas_lib 0770 system system
+#    mkdir /data/system/yas_lib 0770 system system
 
 # Permision for xlat control
     chmod 0660 /sys/kernel/clat/xlat_plat
@@ -368,7 +368,7 @@ on fs
     write /sys/class/sec/sec_key/wakeup_keys 116,172
 
 # Permissions Camera
-    mkdir /data/camera 0770 cameraserver system
+#    mkdir /data/camera 0770 cameraserver system
     chown cameraserver cameraserver /sys/kernel/mm/vmscan/mem_boost_mode
     chown system radio /sys/class/camera/rear/rear_camfw
     chown system radio /sys/class/camera/rear/rear_camfw_full
