@@ -9,7 +9,7 @@
 /sys/devices/virtual/camera/flash/rear_flash                           u:object_r:sysfs_camera_writable:s0
 /sys/devices/virtual/camera/rear/fw_update                             u:object_r:sysfs_camera_writable:s0
 /sys/devices/virtual/camera(/.*)                                       u:object_r:sysfs_camera:s0
-/dev/m2m1shot_scaler0                                                  u:object_r:m2m1shot_device:s0
+/dev/m2m1shot_scaler[0-9]*                                             u:object_r:m2m1shot_device:s0
 
 # Data
 /data/vendor/nfc(/.*)?                                                 u:object_r:nfc_vendor_data_file:s0
@@ -54,3 +54,4 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.software	u:object_r:hal_gatekeeper_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.samsung_32 u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.0-service\.samsung-libperfmgr           u:object_r:hal_power_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.gnss@[0-9]\.[0-9]-service                u:object_r:hal_gnss_default_exec:s0
