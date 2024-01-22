@@ -39,18 +39,6 @@ vendor/lib/libsynaFpSensorTestNwd.so
 # Floating feature
 vendor/etc/floating_feature.xml
 
-# GPS - A720SKSU5CUJ2
-vendor/bin/hw/gpsd|481d950abc178b5e444dd2e75d4226614c7c4032
-vendor/lib/libfloatingfeature.so|a27a6c5cf28cff66d01536f5dbb6ec064e30ec5d
-vendor/lib/libwrappergps.so|69da05db5379d161da1866c907633b16ef7617cd
-vendor/lib64/hw/gps.default.so|e7130572ed5006dd9c3e792584e650a437dc013e
-vendor/lib64/libfloatingfeature.so|a27a6c5cf28cff66d01536f5dbb6ec064e30ec5d
-vendor/lib64/libwrappergps.so|399de1bbf5435c5b90b59549f8916651b92e98a3
-
-# GPS configs
-vendor/etc/gnss/ca.pem
-vendor/etc/gnss/gps.cfg
-
 # Graphics - A720SKSU5CUJ2
 vendor/lib/egl/libGLES_mali.so|b95c1ab62f390f888bc0ad2a6f2e0ff568e5e487
 vendor/lib64/egl/libGLES_mali.so|93b2f7cf14fc47d670f97366844a3d387d93df12
@@ -100,6 +88,9 @@ vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so|ac01bab3a779374005bb6b9
 vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so|44d2173ab0187ec3460dd54135e2b406bc93b098
 vendor/lib64/vendor.samsung.hardware.radio@2.0.so|e9985c207ffec829a1746af29d45d9da1994805f
 vendor/lib64/vendor.samsung.hardware.radio@2.1.so|12953d8fe923094410dfa0ea983515b0b16e8eba
+vendor/lib64/libfloatingfeature.so|a27a6c5cf28cff66d01536f5dbb6ec064e30ec5d
+vendor/lib/libfloatingfeature.so|a27a6c5cf28cff66d01536f5dbb6ec064e30ec5d
+
 
 # TEE
 vendor/app/mcRegistry/00060308060501020000000000000000.tlbin
