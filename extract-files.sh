@@ -63,9 +63,6 @@ function blob_fixup() {
 	vendor/lib/libbauthtzcommon.so)
 	    sed -i "s|\x0b\xd0\xff\xff-\xe9\xf0O\x83\xb0\x89F|\x0b\xd0\xff\xff\x00 pG\x83\xb0\x89F|g" "${2}"
 	    ;;
-	vendor/lib*/libsensorlistener.so)
-	    "$PATCHELF" --add-needed "libshim_sensorndkbridge.so" "$2"
-	    ;;
     esac
 }
 
